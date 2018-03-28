@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+test1.html页面传来的值为：<input type=text id="txt1" />
+<script type="text/javascript">
+    var txt1 = document.getElementById("txt1");
+    txt1.value = location.search.match(new RegExp("[\?\&]mydata1=([^\&]+)", "i"))[1];
+</script>
+</body>
+</body>
+</html>
